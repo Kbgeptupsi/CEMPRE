@@ -1,24 +1,92 @@
-
-<h1 align="center">BIENVENIDOS A CEMPRE</h1>
-<h2 align="center">POR QUÉ EXISTE EL CEMPRE? </h2>
-<p align="justifify">
-  Por que la Universidad requiere desarrollar una adecuada presencia en la sociedad y empresa Regional y Nacional .
-  Por existe la necesidad estrechar las relaciones de los sectores productivos con la institución,aprovechando el factor humano docente con especialidad en distintas áreas y un grueso número de estudiantes y egresados  abiertos al saber.
-  por que hay  establecer  alianzas estratégicas instituciones públicas y privadas que permitan el fortalecimiento de la Universidad, como GENERADOR DE DESARROLLO EDUCATIVO Y SOCIAL.
-</p>
-<h3 align="center">MISIÓN</h3>
-<p align="justifify">El Centro de Estudios Empresariales trabajará por el bien de la Universidad Popular del Cesar, luchando por afianzar sus áreas al quehacer de la institución, promoviendo la solidaridad gremial, con la eficiencia y la tecnología, impulsando el desarrollo intelectual, económico y social de sus actores principales, estudiantes y egresados.</p>
-<h3 align="center">VISIÓN</h3>
-<p align="justifify">Ser un centro modelo de desarrollo académico y práctico, donde se trabaje por la dinámica empresarial y consolidar el enlace Universidad– Sector Empresarial</p>
-
-<div class="card" style="width: 18rem;">
-  <img src="" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">PRACTICAS EMPRESARIALES</h5>
-    <p align="justifify" class="card-text">Aqui se muestra una guia que usted tiene que realizar como practicante que lo guiaran desde su incripcion
-      hasta su graduacion por practicas empresariales en cempre.
-    </p>
-    <a class="nav-link text-dark" [routerLink]="['/PracticantesGuia']" class="btn btn-primary">Para ver guia de practica pulse aqui!</a>
+<header class="p-3 mb-2 bg-success text-white">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-12">
+        <h1 class="display-4 text-white mt-5 mb-2 text-center">CEMPRE</h1>
+        <p class="lead mb-5 text-white-77 text-center">Centro de Estudios Empresariales</p>
+      </div>
+    </div>
   </div>
+</header>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8 mb-5">
+      <h2>¿Quienes somos?</h2>
+      <hr>
+      <p>Cempre trabaja para la universidad popular del cesar para la gestion de los practicantes de face</p>
+      <p>Estas practicas empresariales sirven para validar como grado a dichos practicantes.</p>
+      <a class="nav-link text-dark" [routerLink]="['/infoCempre']" class="p-3 mb-2 bg-success btn btn-primary">Para ver guia de practica pulse aqui!</a>
+    </div>
+    <div class="col-md-4 mb-5">
+      <h2>Contacto</h2>
+      <hr>
+      <address>
+        <strong>Facebook</strong>
+        <br>Cempre Unicesar
+      </address>
+      <address>
+        <abbr title="Telefono">Telefono:</abbr>
+        584 44 45
+        <br>
+        <abbr title="Email">Email:</abbr>
+        <a href="mailto:#">cempre@Unicesar.edu.co</a>
+      </address>
+    </div>
+  </div>
+ 
+
+  <div class="row">
+    <div class="col-md-4 mb-5">
+      <div class="card h-100">
+        <img class="card-img-top" src="http://www.infocapitalhumano.pe/wp-content/uploads/2016/08/Practicantes-300x203.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Practicantes</h4>
+          <p class="card-text">Aqui puede realizar todas las opciones que el practicante puede hacer.</p>
+        </div>
+        <div class="card-footer">
+          <a   [routerLink]="['/FormularioPracticantes']" class=" p-3 mb-2 bg-success btn btn-primary">Click Aqui para mas informacion!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card h-100">
+        <img class="card-img-top" src="http://www.opinion22.com.ar/uploads/mod_noticias/1525639315_docun.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Docentes</h4>
+          <p class="card-text">Aqui puede realizar todas las gestiones que hace el docente </p>
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="['/FormularioDocentes']" class="btn btn-primary p-3 mb-2 bg-success ">Click Aqui para mas informacion!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTClveIqiP2aaboV2fSDS3bZrLQ8gWrG7E8kYnbPsQGAgmdmF49&s" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Empresas</h4>
+          <p class="card-text">Aqui puede realizar todas las acciones de las empresas</p>
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="['/FormularioEmpresas']" class="btn btn-primary p-3 mb-2 bg-success ">Click aqui para mas informacion!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
 </div>
+
+
+<!-- Pie -->
+<footer class="p-3 mb-2 bg-success ">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Frontend-Kbgeptupsi 2019</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
 

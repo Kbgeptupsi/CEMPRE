@@ -1,0 +1,37 @@
+export class Practicantes {
+    id: number;
+    names:string;
+    firstsurname:string;
+    secondsurname:string;
+    placeofbirth:string;
+    statecivil:string;
+    adress:string;
+    telephone:number;
+    email:string;
+    city:string;
+    institution1:string;
+    title1:string;
+    date1:string;
+    institution2:string;
+    title2:string;
+    date2:string;
+    institution3:string;
+    title3:string;
+    date3:string;
+    institution4:string;
+    title4:string;
+    date4:string;
+    p3:string;
+    p4:string;
+    p5:string;
+    p6:string;
+    entity:string;
+    load:string;
+    funtion:string;
+    datep7:string;
+    entity2:string;
+    load2:string;
+    funtion2:string;
+    datep71:string;
+    profile:string;
+}

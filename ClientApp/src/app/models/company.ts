@@ -1,4 +1,4 @@
-export class Empresas {
+export class Company {
     id: number;
     names:string;
     firstsurname:string;

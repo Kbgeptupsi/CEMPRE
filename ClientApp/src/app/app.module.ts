@@ -15,6 +15,7 @@ import { InfoCempreComponent } from './components/info-cempre/info-cempre.compon
 /*import { InMemoryDataService } from '../app/services/in-memory-data.service';*/
 import { RecordTeacherComponent } from './components/record-teacher/record-teacher.component';
 import { RecordCompanyComponent } from './components/record-company/record-company.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { RecordCompanyComponent } from './components/record-company/record-compa
     RecordPracticeerComponent,   
     InfoCempreComponent,   
     RecordTeacherComponent,   
-    RecordCompanyComponent
+    RecordCompanyComponent, LoginComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

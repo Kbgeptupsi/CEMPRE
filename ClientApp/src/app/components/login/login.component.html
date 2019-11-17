@@ -1,0 +1,29 @@
+<div class="back">
+    <div class="centered">
+        <div class="title">
+            <p>Logueate</p>
+        </div> 
+        <div class="center"> 
+            <div class="rows">
+            <h5><p>Usuario</p></h5>
+            <input type="text" [(ngModel)]="login.user" [ngModelOptions]="{standalone:true}">
+            </div>
+            <div class="rows">
+            <h5><p>Contraseña</p></h5>
+            <input type="password" [(ngModel)]="login.password" [ngModelOptions]="{standalone:true}">
+            </div>
+            <div class="rows">
+            <p id="record">¿Has olvidado tu contraseña?</p>
+            </div>
+            <div class="rows">
+            <button (click)="validar()">Ingresar</button>
+            </div>
+            <div class="message" *ngIf="incorrect">
+            <p>Usuario y/o Contraseña Incorrecta</p>
+            </div>
+            <div class="message" *ngIf="exito">
+            <p>Logueo Correcto</p>
+            </div>
+        </div>
+    </div>
+</div>

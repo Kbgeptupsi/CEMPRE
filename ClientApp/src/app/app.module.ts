@@ -38,12 +38,12 @@ import { FormularioEmpresasComponent } from './formulario-empresas/formulario-em
   
     FormsModule,
     
-    /*RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, pathMatch: 'full' }/*,
       { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'fetch-data', component: FetchDataComponent },*/
       
-    ]),*/
+    ]),
     AppRoutingModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService,{ dataEncapsulation: false }),

@@ -20,6 +20,7 @@ namespace CEMPRE.Models
         public string Sex { get; set; }
         public string Program { get; set; }
         public bool Graduated { get; set; }
+        public string Civil_state { get; set; }
         public string Type { get; set; }
         public string Mail { get; set; }
     }

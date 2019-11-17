@@ -7,7 +7,7 @@ import { PracticantesService} from '../../services/practiceer.service';
   templateUrl: './record-practiceer.component.html',
   styleUrls: ['./record-practiceer.component.css']
 })
-export class FormularioPracticanteComponent implements OnInit {
+export class RecordPracticeerComponent implements OnInit {
 
 
 

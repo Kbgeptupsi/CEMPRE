@@ -6,7 +6,7 @@ import {DocenteService} from '../../services/teacher.service';
   templateUrl: './record-teacher.component.html',
   styleUrls: ['./record-teacher.component.css']
 })
-export class FormularioDocenteComponent implements OnInit {
+export class RecordTeacherComponent implements OnInit {
 
   constructor(private docentesService: DocenteService) { }
   docente: Docentes;

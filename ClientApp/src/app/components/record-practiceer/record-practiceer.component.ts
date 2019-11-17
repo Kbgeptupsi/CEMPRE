@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Practicantes } from '../../models/practicantes';
-import { PracticantesService} from '../../services/practicantes.service';
+import { PracticantesService} from '../../services/practiceer.service';
 
 @Component({
-  selector: 'app-formulario-practicante',
-  templateUrl: './formulario-practicante.component.html',
-  styleUrls: ['./formulario-practicante.component.css']
+  selector: 'record-practiceer',
+  templateUrl: './record-practiceer.component.html',
+  styleUrls: ['./record-practiceer.component.css']
 })
 export class FormularioPracticanteComponent implements OnInit {
 

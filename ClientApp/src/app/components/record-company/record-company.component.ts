@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-formulario-empresas',
-  templateUrl: './formulario-empresas.component.html',
-  styleUrls: ['./formulario-empresas.component.css']
+  selector: 'record-company',
+  templateUrl: './record-company.component.html',
+  styleUrls: ['./record-company.component.css']
 })
 export class FormularioEmpresasComponent implements OnInit {
 

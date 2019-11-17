@@ -8,13 +8,13 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
-import { PracticantesGuiaComponent } from './components/practicantes-guia/practicantes-guia.component';
-import { FormularioPracticanteComponent } from './components/formulario-practicante/formulario-practicante.component';
+import { PracticantesGuiaComponent } from './components/help-practiceer/help-practiceer.component';
+import { FormularioPracticanteComponent } from './components/record-practiceer/record-practiceer.component';
 import { InfoCempreComponent } from './components/info-cempre/info-cempre.component';
 /*import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';*/
 /*import { InMemoryDataService } from '../app/services/in-memory-data.service';*/
-import { FormularioDocenteComponent } from './components/formulario-docente/formulario-docente.component';
-import { FormularioEmpresasComponent } from './components/formulario-empresas/formulario-empresas.component';
+import { FormularioDocenteComponent } from './components/record-teacher/record-teacher.component';
+import { FormularioEmpresasComponent } from './components/record-company/record-company.component';
 
 @NgModule({
   declarations: [

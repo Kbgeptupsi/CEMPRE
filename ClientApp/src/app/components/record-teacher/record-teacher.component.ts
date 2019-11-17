@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Docentes } from '../../models/docentes';
-import {DocenteService} from '../../services/docente.service';
+import {DocenteService} from '../../services/teacher.service';
 @Component({
-  selector: 'app-formulario-docente',
-  templateUrl: './formulario-docente.component.html',
-  styleUrls: ['./formulario-docente.component.css']
+  selector: 'record-teacher',
+  templateUrl: './record-teacher.component.html',
+  styleUrls: ['./record-teacher.component.css']
 })
 export class FormularioDocenteComponent implements OnInit {
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-info-cempre',
+  selector: 'info-cempre',
   templateUrl: './info-cempre.component.html',
   styleUrls: ['./info-cempre.component.css']
 })

@@ -1,37 +1,37 @@
 
 /*import { CommonModule } from '@angular/common';*/
-import {PracticantesGuiaComponent} from'./components/practicantes-guia/practicantes-guia.component';
+import {PracticantesGuiaComponent} from'./components/help-practiceer/help-practiceer.component';
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule } from '@angular/router';
-import {FormularioPracticanteComponent} from './components/formulario-practicante/formulario-practicante.component';
+import {FormularioPracticanteComponent} from './components/record-practiceer/record-practiceer.component';
 import { InfoCempreComponent } from './components/info-cempre/info-cempre.component';
-import { FormularioDocenteComponent } from './components/formulario-docente/formulario-docente.component';
-import { FormularioEmpresasComponent } from './components/formulario-empresas/formulario-empresas.component';
+import { FormularioDocenteComponent } from './components/record-teacher/record-teacher.component';
+import { FormularioEmpresasComponent } from './components/record-company/record-company.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-    path:'PracticantesGuia',
+    path:'help/practiceer',
     component:PracticantesGuiaComponent
   },
   {
-    path:'FormularioPracticantes',
+    path:'record/practiceer',
     component:FormularioPracticanteComponent
     },
     {
-      path:'infoCempre',
+      path:'info/cempre',
       component:InfoCempreComponent
     },
     {
-      path:'FormularioDocentes',
+      path:'record/teacher',
       component:FormularioDocenteComponent
     },
     {
-      path:'FormularioEmpresas',
+      path:'record/company',
       component:FormularioEmpresasComponent
     },
     {
-      path: 'app-home',
+      path: 'home',
       component:HomeComponent
     },
     {

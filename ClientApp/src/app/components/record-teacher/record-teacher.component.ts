@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Docentes } from '../../models/teacher';
+import { Teacher } from '../../models/teacher';
 import {DocenteService} from '../../services/teacher.service';
 @Component({
   selector: 'record-teacher',
@@ -9,7 +9,7 @@ import {DocenteService} from '../../services/teacher.service';
 export class RecordTeacherComponent implements OnInit {
 
   constructor(private docentesService: DocenteService) { }
-  docente: Docentes;
+  docente: Teacher;
 
  
   ngOnInit() {

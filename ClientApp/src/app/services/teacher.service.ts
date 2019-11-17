@@ -1,6 +1,6 @@
 import { Injectable,Inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {Docentes} from '../models/teacher';
+import {Teacher} from '../models/teacher';
 import { Observable, of, observable } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 const httpOptions = {
@@ -14,10 +14,10 @@ export class DocenteService {
   constructor(private http:HttpClient, @Inject('BASE_URL') private baseUrl:string )
   {
   }
-  addDocentes(practicante: Docentes): Observable<Docentes>{
-    return this.http.post<Docentes>(this.baseUrl+'api/Docentes', Docentes, httpOptions).pipe(
-    tap((newDocente: Docentes) => this.log(`se Añadio un nuevo Docente w/ id=${newDocente.id}`)),
-    catchError(this.handleError<Docentes>('AgregadoNuevoDocente'))
+  addDocentes(practicante: Teacher): Observable<Teacher>{
+    return this.http.post<Teacher>(this.baseUrl+'api/Teacher', Teacher, httpOptions).pipe(
+    tap((newDocente: Teacher) => this.log(`se Añadio un nuevo Docente w/ id=${newDocente.id}`)),
+    catchError(this.handleError<Teacher>('AgregadoNuevoDocente'))
     );
     }
 

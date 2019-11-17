@@ -16,6 +16,7 @@ import { InfoCempreComponent } from './components/info-cempre/info-cempre.compon
 import { RecordTeacherComponent } from './components/record-teacher/record-teacher.component';
 import { RecordCompanyComponent } from './components/record-company/record-company.component';
 import { EmployeeComponent } from '../app/components/employee/employee.component';
+import { LoginComponent } from '../app/components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { EmployeeComponent } from '../app/components/employee/employee.component
     RecordPracticeerComponent,   
     InfoCempreComponent,   
     RecordTeacherComponent,   
-    RecordCompanyComponent, EmployeeComponent
+    RecordCompanyComponent,
+    LoginComponent, 
+    EmployeeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

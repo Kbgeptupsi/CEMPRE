@@ -1,6 +1,6 @@
 import { Injectable,Inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {Docentes} from '../models/docentes';
+import {Docentes} from '../models/teacher';
 import { Observable, of, observable } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 const httpOptions = {

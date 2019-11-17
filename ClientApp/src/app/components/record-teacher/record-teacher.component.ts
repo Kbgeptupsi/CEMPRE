@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Docentes } from '../../models/docentes';
+import { Docentes } from '../../models/teacher';
 import {DocenteService} from '../../services/teacher.service';
 @Component({
   selector: 'record-teacher',

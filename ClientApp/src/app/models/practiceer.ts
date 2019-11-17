@@ -1,4 +1,4 @@
-export class Practicantes {
+export class Practiceer {
     id: number;
     names:string;
     firstsurname:string;

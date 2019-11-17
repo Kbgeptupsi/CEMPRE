@@ -1,4 +1,4 @@
-export class Docentes {
+export class Teacher {
     id: number;
     names:string;
     firstsurname:string;

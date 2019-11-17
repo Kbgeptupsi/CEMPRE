@@ -1,7 +1,7 @@
 import { Observable, of, observable } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Injectable,Inject } from '@angular/core';
-import {Practicantes} from '../models/practicantes';
+import { Practiceer } from '../models/practiceer';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -10,15 +10,15 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class PracticantesService {
+export class PracticeerService {
 
   constructor(private http:HttpClient, @Inject('BASE_URL') private baseUrl:string )
 {
 }
-addPracticantes(practicante: Practicantes): Observable<Practicantes>{
-  return this.http.post<Practicantes>(this.baseUrl+'api/Practicantes', practicante, httpOptions).pipe(
-  tap((newPracticante: Practicantes) => this.log(`se Añadio un nuevo practicante w/ id=${newPracticante.id}`)),
-  catchError(this.handleError<Practicantes>('AgregadoNuevoPracticante'))
+addPracticeer(practicante: Practiceer): Observable<Practiceer>{
+  return this.http.post<Practiceer>(this.baseUrl+'api/Practiceer', practicante, httpOptions).pipe(
+  tap((newPracticante: Practiceer) => this.log(`se Añadio un nuevo practicante w/ id=${newPracticante.id}`)),
+  catchError(this.handleError<Practiceer>('AgregadoNuevoPracticante'))
   );
   }
 

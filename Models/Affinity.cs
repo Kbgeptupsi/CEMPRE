@@ -9,6 +9,8 @@ namespace CEMPRE.Models
 {
     public class Affinity
     {
-        
+        public string Id { get; set; }
+        public Company Com { get; set; }
+        public Program Prog { get; set; }
     }
 }

@@ -7,8 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CEMPRE.Models
 {
-    public class Depto
+    public class Dpto
     {
-        
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }

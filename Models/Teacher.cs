@@ -9,6 +9,16 @@ namespace CEMPRE.Models
 {
     public class Teacher
     {
-        
+        public string Id { get; set; }
+        public string Firts_name { get; set; }
+        public string Last_name { get; set; }
+        public Cities City { get; set; }
+        public Depto Dpto { get; set; }
+        public string Direction { get; set; }
+        public string Phone { get; set; }
+        public DateTime Born_date { get; set; }
+        public string Sex { get; set; }
+        public string Program { get; set; }
+        public string Type { get; set; }
     }
 }

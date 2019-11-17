@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Practicantes } from '../models/practicantes';
-import { PracticantesService} from '../services/practicantes.service';
+import { Practicantes } from '../../models/practicantes';
+import { PracticantesService} from '../../services/practicantes.service';
 
 @Component({
   selector: 'app-formulario-practicante',

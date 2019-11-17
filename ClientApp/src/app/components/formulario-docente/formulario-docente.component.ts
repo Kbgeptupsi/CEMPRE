@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Docentes } from '../models/docentes';
-import {DocenteService} from '../services/docente.service';
+import { Docentes } from '../../models/docentes';
+import {DocenteService} from '../../services/docente.service';
 @Component({
   selector: 'app-formulario-docente',
   templateUrl: './formulario-docente.component.html',

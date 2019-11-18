@@ -16,7 +16,6 @@ import { RecordTeacherComponent } from './components/record-teacher/record-teach
 import { RecordCompanyComponent } from './components/record-company/record-company.component';
 import { EmployeeComponent } from '../app/components/employee/employee.component';
 import { LoginComponent } from '../app/components/login/login.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
@@ -29,7 +28,8 @@ import { MenuComponent } from './components/menu/menu.component';
     RecordTeacherComponent,   
     RecordCompanyComponent,
     LoginComponent, 
-    EmployeeComponent, NavBarComponent, MenuComponent
+    EmployeeComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

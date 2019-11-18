@@ -5,7 +5,6 @@ import { HttpClientModule} from '@angular/common/http';
 /*import { RouterModule } from '@angular/router';*/
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HelpPracticeerComponent } from './components/help-practiceer/help-practiceer.component';
@@ -17,11 +16,12 @@ import { RecordTeacherComponent } from './components/record-teacher/record-teach
 import { RecordCompanyComponent } from './components/record-company/record-company.component';
 import { EmployeeComponent } from '../app/components/employee/employee.component';
 import { LoginComponent } from '../app/components/login/login.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent,
     HomeComponent,   
     HelpPracticeerComponent,   
     RecordPracticeerComponent,   
@@ -29,7 +29,7 @@ import { LoginComponent } from '../app/components/login/login.component';
     RecordTeacherComponent,   
     RecordCompanyComponent,
     LoginComponent, 
-    EmployeeComponent
+    EmployeeComponent, NavBarComponent, MenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -2,7 +2,7 @@
 /*import { CommonModule } from '@angular/common';*/
 import { HelpPracticeerComponent } from'./components/help-practiceer/help-practiceer.component';
 import { NgModule } from '@angular/core';
-import {Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { RecordPracticeerComponent } from './components/record-practiceer/record-practiceer.component';
 import { InfoCempreComponent } from './components/info-cempre/info-cempre.component';
 import { RecordTeacherComponent } from './components/record-teacher/record-teacher.component';

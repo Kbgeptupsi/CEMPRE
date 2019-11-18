@@ -1,6 +1,54 @@
 <body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
+
+  <div class="back">
+    <div class="section left">
+      <div class="mark l" (click)="open()">
+        <div class="cimg">
+          <img src="assets/source/menu22x22.png" alt="menu">
+        </div>
+      </div>
+      <div class="hom" routerLink="/">
+        <p>Inicio</p>
+      </div>
+    </div>
+  
+    <div class="section center">
+      <div class="opt" routerLink="/record/practiceer">
+        <p>Practicante</p>
+      </div>
+      <div class="opt" routerLink="/record/company">
+        <p>Empresa</p>
+      </div>
+      <div class="opt" routerLink="/record/teacher">
+        <p>Docente</p>
+      </div>
+    </div>
+  
+    <div class="section rigth">
+      <div class="log" routerLink="/login">
+        <p>LogIn</p>
+      </div>
+      <div class="mark r">
+        <div class="logo">
+          <img src="assets/source/cempre_logo.png" alt="">
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="body">
+    <div class="space" *ngIf="ver">
+    </div>
+    <div class="content">
+      <div class="router">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu" *ngIf="ver">
+    <app-menu *ngIf="tipo"></app-menu>
+    <!--<app-menu-user *ngIf="!tipo"></app-menu-user>-->
+  </div>
+
 </body>

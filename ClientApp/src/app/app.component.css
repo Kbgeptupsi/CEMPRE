@@ -5,13 +5,13 @@
     }
     .menu{
         z-index: 2;
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(43, 148, 43, 0.9);
     }
 }
 
 @media (min-width:1126px){
     .menu{
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(43, 148, 43, 0.9);
     }
 }
 
@@ -31,7 +31,7 @@
     top: 40px;
     margin-bottom: 1px;
     border-radius: 10px;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(43, 148, 43, 0.9);
     padding-top: 14%;
 }
 
@@ -68,7 +68,7 @@
 .back{
     height: 35px;
     width: 98%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(43, 148, 43, 0.9);
     display: flex;
     flex-direction: row;
     cursor: pointer;
@@ -97,7 +97,7 @@ p{
 }
 
 .log:hover{
-    background-color: rgba(43, 148, 43, 0.9);
+    background-color: rgba(245, 245, 245, 0.2);
 }
 
 .hom{
@@ -109,7 +109,7 @@ p{
 }
 
 .hom:hover{
-    background-color: rgba(43, 148, 43, 0.9);
+    background-color: rgba(245, 245, 245, 0.2);
 }
 
 .mark{
@@ -121,12 +121,12 @@ p{
 }
 
 .l:hover{
-    background-color: rgba(43, 148, 43, 0.9);
+    background-color: rgba(245, 245, 245, 0.2);
     border-radius: 10px 0 0 10px; 
 }
 
 .r:hover{
-    background-color: rgba(43, 148, 43, 0.9);
+    background-color: rgba(245, 245, 245, 0.2);
     border-radius: 0 10px 10px 0; 
 }
 
@@ -156,7 +156,7 @@ p{
 }
 
 .opt:hover{
-    background-color: rgba(43, 148, 43, 0.9);
+    background-color: rgba(245, 245, 245, 0.2);
 }
 
 .center{

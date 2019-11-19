@@ -17,7 +17,7 @@
 
     <div class="panel" *ngIf="pag==0">
 
-      <h5>SUBA FOTOGRAFRIA 3X4 FONDO BLANCO AQUI</h5> 
+      <h5>SUBA FOTOGRAFIA 3X4 FONDO BLANCO AQUI</h5> 
       
       <div class="preview">
         <div class="photo">
@@ -35,68 +35,75 @@
     
     <div class="panel" *ngIf="pag==1">
 
-      <h5>1. DATOS PERSONALES</h5>
+      <h5>DATOS PERSONALES</h5>
 
       <div class="cols">
 
         <div class="col1">       
           <div>        
-            <label>PRIMER APELLIDO</label>
+            <label>Primer apellido</label>
             <input [(ngModel)]="Practicantes.firstsurname" type="text"   placeholder="Digite primer apellido">
           </div>
   
           <div >
-            <label >NOMBRES</label>
+            <label >Nombres</label>
             <input [(ngModel)]="Practicantes.names" type="text"   placeholder="Digite nombres">
           </div>
   
           <div >
-            <label >LUGAR DE NACIMIENTO</label>
+            <label >Departamento</label>
             <input [(ngModel)]="Practicantes.placeofbirth" type="text"   placeholder="Digite lugar de nacimiento">
           </div>   
   
           <div >
-            <label >DIRECCION ACTUAL</label>
+            <label >Dirección</label>
             <input [(ngModel)]="Practicantes.adress" type="text"   placeholder="Digite Direcciona actual">
           </div>
   
           <div >
-            <label >CIUDAD</label>
-            <input [(ngModel)]="Practicantes.city" type="text"   placeholder="Digite ciudad">
-          </div>    
+            <label >Estado civil</label>
+            <input [(ngModel)]="Practicantes.statecivil" type="text"   placeholder="Digite estado civil">
+          </div>
+
         </div>
   
         <div class="col2">    
           <div >
-            <label >SEGUNDO APELLIDO</label>
+            <label >Segundo apellido</label>
             <input [(ngModel)]="Practicantes.lastsurname" type="text"   placeholder="Digite segundo apellido">
           </div>
   
           <div >
-            <label >CEDULA DE CIUDADANIA</label>
+            <label >Cedula</label>
             <input [(ngModel)]="Practicantes.id" type="text"   placeholder="Digite cedula">
           </div>
-  
+
           <div >
-            <label >ESTADO CIVIL</label>
-            <input [(ngModel)]="Practicantes.statecivil" type="text"   placeholder="Digite estado civil">
+            <label >Ciudad</label>
+            <div class="list">
+              <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                <option selected value="Uno">Opción</option>
+                <option value="Dos">Opción</option>
+                <option value="Tres">Opción</option>
+              </select>
+            </div>
           </div>
   
           <div >
-            <label >TELEFONO</label>
+            <label >Telefono</label>
             <input [(ngModel)]="Practicantes.telephone" type="text"   placeholder="Digite telefono">
           </div>
   
           <div >
-            <label >CORREO ELECTRONICO</label>
+            <label >Email</label>
             <input [(ngModel)]="Practicantes.text" type="text"   placeholder="Digite correo elecetronico">
-          </div>    
+          </div>
         </div>        
 
       </div>
 
       <div >
-        <label >SELECCIONE ARCHIVO PDF DE EPS A LA QUE ESTA ADSCRITO AQUI</label>
+        <label >Constancia de EPS</label>
         <div class="files">
           <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
           <button id="upload" (click)="fileInput.click()">Up</button>

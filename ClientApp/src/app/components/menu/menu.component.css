@@ -16,7 +16,7 @@
     border-radius: 10px;
     cursor: pointer;
     outline: none;
-    background-color: rgba(43, 148, 43, 0.9);;
+    background-color: rgb(35, 71, 35);;
 }
 
 .post span{
@@ -32,7 +32,7 @@
     position: absolute;
     height: fit-content;
     top: 0;
-    color: gray;
+    color: rgba(245,245,245,0.2);
     width: fit-content;
     margin-left: 2%;
 }
@@ -41,9 +41,10 @@
     display: flex;
     color: black;
     flex-direction: column;
-    height: inherit;
-    width: inherit;
+    height: 100%;
+    width: 100%;
     justify-content: center;
+    align-items: center;
     border-right: 1px solid gray;
 }
 

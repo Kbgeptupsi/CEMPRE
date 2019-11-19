@@ -1,0 +1,109 @@
+.back{
+    width: 100%;
+    height: 100%;    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    height: fit-content;
+    border: 1px solid rgb(242, 242, 242);
+    background-color: white;
+}
+
+.panel{    
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+}
+
+.paginators{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(43, 148, 43, 0.9);
+}
+
+.preview{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    width: 3cm;
+    height: 4cm;
+    background-color: rgba(235,235,235);
+    margin-bottom: 10px;
+}
+
+.files{
+    margin-bottom: 10px;
+}
+
+input{    
+    margin-bottom: 10px;
+}
+
+button{    
+    margin-bottom: 10px;
+}
+
+.opt{
+    height: 40px;
+    width: 100px;
+}
+
+.opt > p{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.opt:hover{
+    background-color: white;
+    border: 1px solid green;
+    transition: 1s;
+}
+
+.opt:hover > p{    
+    color: black;
+}
+
+.space{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cols{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;    
+}
+
+.col1{
+    width: 100%;
+    height: fit-content;
+}
+
+.col2{
+    width: 100%;
+    height: fit-content;
+}

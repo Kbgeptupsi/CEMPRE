@@ -9,7 +9,8 @@ import { PracticeerService} from '../../services/practiceer.service';
 })
 export class RecordPracticeerComponent implements OnInit {
 
-
+  private pag:number = 0;
+  private max:number = 5;
 
   constructor(private practicanteService: PracticeerService) { }
   practicante: Practiceer;
@@ -23,5 +24,14 @@ export class RecordPracticeerComponent implements OnInit {
     .subscribe(task => {
     alert('Se agrego un nuevo practicante')
     });
-    }
+  }
+
+  sig(){
+    this.pag>=this.max ? this.pag=0 : this.pag += 1;    
+  }
+
+  ant(){
+    this.pag<=0 ? this.pag=this.max : this.pag -= 1;
+  }
+  
 }

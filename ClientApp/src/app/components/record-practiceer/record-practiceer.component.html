@@ -3,13 +3,13 @@
 
     <div class="paginators">
       <div class="opt" (click)="ant()">
-        <p>Anterior</p>
+        <img src="assets/source/arrowii.png" alt="">
       </div>
       <div class="space">
 
       </div>
       <div class="opt" (click)="sig()">
-        <p>Siguiente</p>
+        <img src="assets/source/arrowdd.png" alt="">
       </div>
     </div>
 
@@ -52,8 +52,14 @@
   
           <div >
             <label >Departamento</label>
-            <input [(ngModel)]="Practicantes.placeofbirth" type="text"   placeholder="Digite lugar de nacimiento">
-          </div>   
+            <div class="list">
+              <select [(ngModel)]="Practicantes.placeofbirth" [ngModelOptions]="{standalone:true}">
+                <option selected value="Uno">Amazonas</option>
+                <option value="Dos">Antioquia</option>
+                
+              </select>
+            </div>
+          </div>
   
           <div >
             <label >Dirección</label>
@@ -338,13 +344,13 @@
     
     <div class="paginators">
       <div class="opt" (click)="ant()">
-        <p>Anterior</p>
+        <img src="assets/source/arrowii.png" alt="">
       </div>
       <div class="space">
 
       </div>
       <div class="opt" (click)="sig()">
-        <p>Siguiente</p>
+        <img src="assets/source/arrowdd.png" alt="">
       </div>
     </div>
 

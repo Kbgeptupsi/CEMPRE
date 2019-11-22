@@ -5,12 +5,21 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RecordPracticeerComponent } from './components/record-practiceer/record-practiceer.component';
 import { InfoCempreComponent } from './components/info-cempre/info-cempre.component';
-import { RecordTeacherComponent } from './components/record-teacher/record-teacher.component';
 import { RecordCompanyComponent } from './components/record-company/record-company.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent  }  from './components/login/login.component';
+import { HelpCompanyComponent } from './components/help-company/help-company.component';
+import { HelpTeacherComponent } from './components/help-teacher/help-teacher.component';
 
 const routes: Routes = [
+  {
+    path:'help/company',
+    component:HelpCompanyComponent
+  },
+  {
+    path:'help/teacher',
+    component:HelpTeacherComponent
+  },
   {
     path:'login',
     component:LoginComponent
@@ -26,10 +35,6 @@ const routes: Routes = [
   {
     path:'info/cempre',
     component:InfoCempreComponent
-  },
-  {
-    path:'record/teacher',
-    component:RecordTeacherComponent
   },
   {
     path:'record/company',

@@ -45,46 +45,12 @@
           </div>
   
           <div >
-            <label >Nombres</label>
+            <label>Nombres</label>
             <input [(ngModel)]="Practicantes.names" type="text"   placeholder="Digite nombres">
           </div>
   
           <div >
-            <label >Departamento</label>
-            <div class="list">
-              <select [(ngModel)]="Practicantes.placeofbirth" [ngModelOptions]="{standalone:true}">
-                <option selected value="Uno">Amazonas</option>
-                <option value="Dos">Antioquia</option>
-                
-              </select>
-            </div>
-          </div>
-  
-          <div >
-            <label >Dirección</label>
-            <input [(ngModel)]="Practicantes.adress" type="text"   placeholder="Digite Direcciona actual">
-          </div>
-  
-          <div >
-            <label >Estado civil</label>
-            <input [(ngModel)]="Practicantes.statecivil" type="text"   placeholder="Digite estado civil">
-          </div>
-
-        </div>
-  
-        <div class="col2">    
-          <div >
-            <label >Segundo apellido</label>
-            <input [(ngModel)]="Practicantes.lastsurname" type="text"   placeholder="Digite segundo apellido">
-          </div>
-  
-          <div >
-            <label >Cedula</label>
-            <input [(ngModel)]="Practicantes.id" type="text"   placeholder="Digite cedula">
-          </div>
-
-          <div >
-            <label >Ciudad</label>
+            <label>Departamento</label>
             <div class="list">
               <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
                 <option selected value="Uno">Opción</option>
@@ -95,12 +61,52 @@
           </div>
   
           <div >
-            <label >Telefono</label>
+            <label>Dirección</label>
+            <input [(ngModel)]="Practicantes.adress" type="text"   placeholder="Digite Direcciona actual">
+          </div>
+  
+          <div>
+            <label >Estado civil</label>
+            <div class="list">
+              <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                <option selected value="Uno">Opción</option>
+                <option value="Dos">Opción</option>
+                <option value="Tres">Opción</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+  
+        <div class="col2">    
+          <div >
+            <label>Segundo apellido</label>
+            <input [(ngModel)]="Practicantes.lastsurname" type="text"   placeholder="Digite segundo apellido">
+          </div>
+  
+          <div >
+            <label>Cedula</label>
+            <input [(ngModel)]="Practicantes.id" type="text"   placeholder="Digite cedula">
+          </div>
+
+          <div >
+            <label>Ciudad</label>
+            <div class="list">
+              <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                <option selected value="Uno">Opción</option>
+                <option value="Dos">Opción</option>
+                <option value="Tres">Opción</option>
+              </select>
+            </div>
+          </div>
+  
+          <div >
+            <label>Telefono</label>
             <input [(ngModel)]="Practicantes.telephone" type="text"   placeholder="Digite telefono">
           </div>
   
           <div >
-            <label >Email</label>
+            <label>Email</label>
             <input [(ngModel)]="Practicantes.text" type="text"   placeholder="Digite correo elecetronico">
           </div>
         </div>        
@@ -120,172 +126,178 @@
     
     <div class="panel" *ngIf="pag==2">
 
-      <h5>2. ESTUDIOS REALIZADOS</h5>
+      <h5>ESTUDIOS REALIZADOS</h5>
   
       <div class="cols">
         <div class="col1">
 
-          <p>NIVEL SECUNDARIO:</p>
+          <p>NIVEL SECUNDARIO</p>
           <div >
-            <label>INSTITUCION:</label>
+            <label>Institución</label>
             <div>
-              <input [(ngModel)]="Practicantes.institution1" type="text"   placeholder="digite su institucion">
+              <input [(ngModel)]="Practicantes.institution1" type="text"   placeholder="Digite su institucion">
             </div>
           </div>
         
           <div >
-            <label  >TITULO:</label>
+            <label>Titulo</label>
             <div >
-              <input [(ngModel)]="Practicantes.title1" type="text"   placeholder="digite su titulo">
+              <input [(ngModel)]="Practicantes.title1" type="text"   placeholder="Digite su titulo">
             </div>
           </div>
         
           <div >
-            <label  >FECHA:</label>
+            <label>Fecha</label>
             <div >
-              <input [(ngModel)]="Practicantes.date1" type="text"   placeholder="digite su fecha de grado">
+              <input [(ngModel)]="Practicantes.date1" type="text"   placeholder="Digite su fecha de grado">
             </div>
           </div>
+
+          <p>NIVEL UNIVERSITARIO</p>
+            
+          <div >
+            <label>Institución</label>
+            <div >
+              <input type="text"   placeholder="Digite su institucion">
+            </div>
+          </div>
+        
+          <div >
+            <label>Titulo</label>
+            <div >
+              <input type="text"   placeholder="Digite su titulo">
+            </div>
+          </div>
+        
+          <div>
+            <label>Fecha</label>
+            <div>
+              <input type="date"   placeholder="Digite su fecha de grado">
+            </div>
+          </div>
+
         </div>
         
         <div class="col2">
-          <p>NIVEL UNIVERSITARIO:</p>
-            
-          <div >
-            <label  >INSTITUCION:</label>
-            <div >
-              <input type="text"   placeholder="digite su institucion">
+
+          <p>IDIOMAS</p>
+          
+          <div>
+            <label>Institución</label>
+            <div>
+              <input type="text"   placeholder="Digite su institucion">
             </div>
           </div>
         
           <div >
-            <label  >TITULO:</label>
+            <label>Titulo</label>
             <div >
-              <input type="text"   placeholder="digite su titulo">
+              <input type="text"   placeholder="Digite su titulo">
+            </div>
+          </div>
+        
+          <div>
+            <label>Fecha</label>
+            <div>
+              <input type="date"   placeholder="Digite su fecha de grado">
+            </div>
+          </div> 
+
+          <p>OTROS ESTUDIOS</p>
+      
+          <div>
+            <label>Inscripción</label>
+            <div>
+              <input type="text"   placeholder="Digite su institucion">
             </div>
           </div>
         
           <div >
-            <label  >FECHA:</label>
-            <div >
-              <input type="date"   placeholder="digite su fecha de grado">
+            <label>Titulo</label>
+            <div>
+              <input type="text"   placeholder="Digite su titulo">
             </div>
           </div>
+        
+          <div >
+            <label>Fecha</label>
+            <div>
+              <input type="date"   placeholder="Digite su fecha de grado">
+            </div>
+          </div>  
         </div>
+
       </div>
-      
-      <p>OTROS ESTUDIOS:</p>
-      
-      <div >
-        <label  >INSTITUCION:</label>
-        <div >
-          <input type="text"   placeholder="digite su institucion">
-        </div>
-      </div>
-    
-      <div >
-        <label  >TITULO:</label>
-        <div >
-          <input type="text"   placeholder="digite su titulo">
-        </div>
-      </div>
-    
-      <div >
-        <label  >FECHA:</label>
-        <div >
-          <input type="text"   placeholder="digite su fecha de grado">
-        </div>
-      </div>     
 
     </div>
 
     <div class="panel" *ngIf="pag==3">
-
       <div class="cols">
 
         <div class="col1">
-          <p>IDIOMAS:</p>
-            
-          <div >
-            <label  >INSTITUCION:</label>
-            <div >
-              <input type="text"   placeholder="digite su institucion">
-            </div>
+          <div>
+            <label>Investigaciones o proyectos</label>
+            <textarea></textarea>
           </div>
-        
+          
           <div >
-            <label  >TITULO:</label>
-            <div >
-              <input type="text"   placeholder="digite su titulo">
-            </div>
+            <label>Conocimientos de informatica</label>
+            <textarea></textarea>
           </div>
-        
-          <div >
-            <label  >FECHA:</label>
-            <div >
-              <input type="text"   placeholder="digite su fecha de grado">
-            </div>
-          </div>
-
         </div>
 
         <div class="col2">
           <div >
-            <label >3.INVESTIGACION O PROYECTOS REALIZADOS</label>
-            <textarea ></textarea>
+            <label>Seminarios o cursos</label>
+            <textarea placeholder="Tema, institucion, fecha"></textarea>
           </div>
-          
+    
           <div >
-            <label >4.CONOCIMIENTO O PRACTICA DE INFORMATICA QUE POSEE</label>
-            <textarea ></textarea>
+            <label >Distinciones y honores</label>
+            <textarea placeholder="Distincion, institucion, fecha"></textarea>
           </div>
-          
-          <div >
-            <label >5.SEMINARIOS O CURSOS ASISTIDOS(Tema,institucion,fecha)</label>
-            <textarea></textarea>
-          </div>         
-
         </div>
-
-      </div>
-
+      </div>  
+      
+      <h5>AREAS DE INTERES PARA EL DESARROLLO DE LAS PRACTICAS EN ORDEN DE PREFERENCIA</h5>
+            
       <div >
-        <label >6.DISTINCIONES Y HONORES RECIBIDOS(Distincion,institucion,fecha)</label>
-        <textarea></textarea>
+        <label >Digite sus perfiles</label>
+        <textarea placeholder="Por orden de preferencia"></textarea>
       </div>
 
     </div>
                   
     <div class="panel" *ngIf="pag==4">
 
-      <h5>7. EXPERIENCIA LABORAL</h5>
+      <h5>EXPERIENCIA LABORAL</h5>
       
       <div class="cols">
 
         <div class="col1">
           <div >
-            <label  >ENTIDAD:</label>
+            <label>Entidad</label>
             <div >
               <input type="text"   placeholder="digite entidad">
             </div>
           </div>
 
           <div >
-            <label  >FUNCIONES DESEMPEÑADAS:</label>
+            <label>Funciones desempeñadas</label>
             <div >
               <input type="text"   placeholder="digite sus funciones">
             </div>
           </div>
 
           <div >
-            <label  >ENTIDAD:</label>
+            <label>Entidad</label>
             <div >
               <input type="text"   placeholder="digite entidad">
             </div>
           </div>
 
           <div >
-            <label  >FUNCIONES DESEMPEÑADAS:</label>
+            <label>Funciones desempeñadas</label>
             <div >
               <input type="text"   placeholder="digite sus funciones">
             </div>
@@ -295,28 +307,28 @@
 
         <div class="col2">
           <div >
-            <label  >CARGO:</label>
+            <label>Cargo</label>
             <div >
               <input type="text"   placeholder="digite cargo">
             </div>
           </div>
 
           <div >
-            <label  >DURACION FECHA:</label>
+            <label>Duración</label>
             <div >
               <input type="text"   placeholder="digite fecha">
             </div>
           </div>
 
           <div >
-            <label  >CARGO:</label>
+            <label>Cargo</label>
             <div >
               <input type="text"   placeholder="digite cargo">
             </div>
           </div>
 
           <div >
-            <label  >DURACION FECHA:</label>
+            <label>Duracón</label>
             <div >
               <input type="text"   placeholder="digite fecha">
             </div>
@@ -324,17 +336,7 @@
 
         </div>
       </div>
-    </div>
 
-    <div class="panel" *ngIf="pag==5">
-
-      <h5>8. AREAS DE INTERES PARA EL DESARROLLO DE LAS PRACTICAS EN ORDEN DE PREFERENCIA</h5>
-    
-      <div >
-        <label >DIGITE SUS PERFILES POR ORDEN DE PREFERENCIA:</label>
-        <textarea></textarea>
-      </div>
-      
       <div >
         <button (click)="add()" >REGISTRAR</button>
       </div>

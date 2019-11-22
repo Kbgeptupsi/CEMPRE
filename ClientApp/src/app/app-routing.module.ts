@@ -1,5 +1,4 @@
 
-/*import { CommonModule } from '@angular/common';*/
 import { HelpPracticeerComponent } from'./components/help-practiceer/help-practiceer.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

@@ -23,7 +23,6 @@ img{
 input{
   outline: none;
   /*background-color: rgba(124, 124, 124, 0.05);*/
-  border: 1px solid transparent;
   border: 1px solid rgba(43, 148, 43, 0.3);
   width: 100%;
   border-radius: 25px; 
@@ -52,9 +51,7 @@ button:hover{
 select{
   outline: none;
   /*background-color: rgba(124, 124, 124, 0.05);*/
-  border: 1px solid transparent;
-  border-right: 1px solid rgba(43, 148, 43, 0.9);
-  border-left: 1px solid rgba(43, 148, 43, 0.9);
+  border: 1px solid rgba(43, 148, 43, 0.3);
   width: 100%;
   border-radius: 25px; 
   padding: 0 10px 0 10px;
@@ -91,12 +88,13 @@ textarea{
   min-height: 35px;
   max-height: 100px;
   height: 35px;
-  border-radius: 10px;
+  border-radius: 25px;
   background-color: transparent;
   border: 1px solid rgba(43, 148, 43, 0.3);
   outline: none;
   color: black;
-  font-style: italic;
-  font-size: small;
+  padding: 5px 10px 0 10px;
+  /*font-style: italic;
+  font-size: small;*/
 }
 

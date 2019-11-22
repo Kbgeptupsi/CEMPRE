@@ -17,6 +17,8 @@ import { RecordCompanyComponent } from './components/record-company/record-compa
 import { EmployeeComponent } from '../app/components/employee/employee.component';
 import { LoginComponent } from '../app/components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { HelpCompanyComponent } from './components/help-company/help-company.component';
+import { HelpTeacherComponent } from './components/help-teacher/help-teacher.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { MenuComponent } from './components/menu/menu.component';
     RecordCompanyComponent,
     LoginComponent, 
     EmployeeComponent,
-    MenuComponent
+    MenuComponent,
+    HelpCompanyComponent,
+    HelpTeacherComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

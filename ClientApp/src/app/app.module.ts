@@ -19,6 +19,9 @@ import { LoginComponent } from '../app/components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HelpCompanyComponent } from './components/help-company/help-company.component';
 import { HelpTeacherComponent } from './components/help-teacher/help-teacher.component';
+import { MenuPracticeerComponent } from './components/menu-practiceer/menu-practiceer.component';
+import { MenuCompanyComponent } from './components/menu-company/menu-company.component';
+import { MenuDocentComponent } from './components/menu-docent/menu-docent.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { HelpTeacherComponent } from './components/help-teacher/help-teacher.com
     EmployeeComponent,
     MenuComponent,
     HelpCompanyComponent,
-    HelpTeacherComponent
+    HelpTeacherComponent,
+    MenuPracticeerComponent,
+    MenuCompanyComponent,
+    MenuDocentComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -64,29 +64,26 @@ button{
     margin-bottom: 10px;
 }
 
+.cont{
+    width: 38px;
+    height: 38px;
+    padding:0;
+    border: 0;
+    margin: 0;
+}
+
 .opt{
     height: 40px;
     width: 100px;
-}
-
-.opt > p{
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    color: white;
 }
 
 .opt:hover{
-    background-color: white;
-    border: 1px solid green;
+    background-color: rgba(48, 173, 48, 0.3);
     transition: 1s;
-}
-
-.opt:hover > p{    
-    color: black;
 }
 
 .space{

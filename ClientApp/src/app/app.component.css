@@ -56,7 +56,7 @@
     padding: 10px;
     width: inherit;
     z-index: 1;
-    /*height: 100%;*/
+    height: 100%;
 }
 
 .content{
@@ -167,3 +167,9 @@ p{
     color: green;
 }
 /*FIN NAV-BAR*/
+
+
+.content{
+    position: absolute;
+    height: 100%;
+}

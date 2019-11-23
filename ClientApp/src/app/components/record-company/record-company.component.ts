@@ -15,6 +15,7 @@ export class RecordCompanyComponent implements OnInit {
   constructor(private companyS:CompanyService) { }
 
   ngOnInit() {
+    window.scrollTo(0,0);
   }
 
   sig(){

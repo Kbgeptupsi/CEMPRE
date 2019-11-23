@@ -10,11 +10,11 @@
 
 .center{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     height: fit-content;
     border: 1px solid rgb(242, 242, 242);
     background-color: white;
@@ -26,12 +26,36 @@
     width: 100%;
 }
 
-.paginators{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
+.left{
     background-color: transparent;
+    height: 100%;
+    width: 40px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left:hover{
+    background: linear-gradient(to right, rgba(48, 173, 48, 0.3), transparent);
+    width: 80px;
+    border-left: 2px solid rgba(48, 173, 48, 0.5);
+}
+
+.right{
+    background-color: transparent;
+    height: 100%;
+    width: 40px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.right:hover{
+    background: linear-gradient(to left, rgba(48, 173, 48, 0.3), transparent);
+    width: 80px;
+    border-right: 2px solid rgba(48, 173, 48, 0.5);
 }
 
 .preview{
@@ -64,29 +88,26 @@ button{
     margin-bottom: 10px;
 }
 
+.cont{
+    width: 38px;
+    height: 38px;
+    padding:0;
+    border: 0;
+    margin: 0;
+}
+
 .opt{
     height: 40px;
     width: 100px;
-}
-
-.opt > p{
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    color: white;
 }
 
 .opt:hover{
-    background-color: white;
-    border: 1px solid green;
+    background-color: rgba(48, 173, 48, 0.3);
     transition: 1s;
-}
-
-.opt:hover > p{    
-    color: black;
 }
 
 .space{

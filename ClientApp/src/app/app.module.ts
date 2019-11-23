@@ -22,6 +22,9 @@ import { HelpTeacherComponent } from './components/help-teacher/help-teacher.com
 import { MenuPracticeerComponent } from './components/menu-practiceer/menu-practiceer.component';
 import { MenuCompanyComponent } from './components/menu-company/menu-company.component';
 import { MenuDocentComponent } from './components/menu-docent/menu-docent.component';
+import { TeacherComponent } from './components/teacher/teacher.component';
+import { PracticeerComponent } from './components/practiceer/practiceer.component';
+import { CompanyComponent } from './components/company/company.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { MenuDocentComponent } from './components/menu-docent/menu-docent.compon
     HelpTeacherComponent,
     MenuPracticeerComponent,
     MenuCompanyComponent,
-    MenuDocentComponent
+    MenuDocentComponent,
+    TeacherComponent,
+    PracticeerComponent,
+    CompanyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

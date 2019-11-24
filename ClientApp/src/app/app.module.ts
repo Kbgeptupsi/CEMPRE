@@ -25,6 +25,22 @@ import { MenuDocentComponent } from './components/menu-docent/menu-docent.compon
 import { TeacherComponent } from './components/teacher/teacher.component';
 import { PracticeerComponent } from './components/practiceer/practiceer.component';
 import { CompanyComponent } from './components/company/company.component';
+import { TgpracticeersComponent } from './components/tgpracticeers/tgpracticeers.component';
+import { TgrankingsComponent } from './components/tgrankings/tgrankings.component';
+import { TgfaultsComponent } from './components/tgfaults/tgfaults.component';
+import { TgplaceComponent } from './components/tgplace/tgplace.component';
+import { CgpracticeersComponent } from './components/cgpracticeers/cgpracticeers.component';
+import { CgsubscribedComponent } from './components/cgsubscribed/cgsubscribed.component';
+import { CgplacesComponent } from './components/cgplaces/cgplaces.component';
+import { CgpracticesComponent } from './components/cgpractices/cgpractices.component';
+import { PgpracticesComponent } from './components/pgpractices/pgpractices.component';
+import { PgrequestsComponent } from './components/pgrequests/pgrequests.component';
+import { PgsubscribedComponent } from './components/pgsubscribed/pgsubscribed.component';
+import { EgteachersComponent } from './components/egteachers/egteachers.component';
+import { EgpracticeersComponent } from './components/egpracticeers/egpracticeers.component';
+import { EgcompaniesComponent } from './components/egcompanies/egcompanies.component';
+import { EgreportsComponent } from './components/egreports/egreports.component';
+import { EgpracticesComponent } from './components/egpractices/egpractices.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +61,23 @@ import { CompanyComponent } from './components/company/company.component';
     MenuDocentComponent,
     TeacherComponent,
     PracticeerComponent,
-    CompanyComponent
+    CompanyComponent,
+    TgpracticeersComponent,
+    TgrankingsComponent,
+    TgfaultsComponent,
+    TgplaceComponent,
+    CgpracticeersComponent,
+    CgsubscribedComponent,
+    CgplacesComponent,
+    CgpracticesComponent,
+    PgpracticesComponent,
+    PgrequestsComponent,
+    PgsubscribedComponent,
+    EgteachersComponent,
+    EgpracticeersComponent,
+    EgcompaniesComponent,
+    EgreportsComponent,
+    EgpracticesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

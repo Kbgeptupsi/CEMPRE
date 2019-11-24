@@ -14,8 +14,94 @@ import { EmployeeComponent } from './components/employee/employee.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
 import { PracticeerComponent } from './components/practiceer/practiceer.component';
 import { CompanyComponent } from './components/company/company.component';
+import { TgfaultsComponent } from './components/tgfaults/tgfaults.component';
+import { TgplaceComponent } from './components/tgplace/tgplace.component';
+import { TgpracticeersComponent } from './components/tgpracticeers/tgpracticeers.component';
+import { TgrankingsComponent } from './components/tgrankings/tgrankings.component';
+import { CgpracticeersComponent } from './components/cgpracticeers/cgpracticeers.component';
+import { CgpracticesComponent } from './components/cgpractices/cgpractices.component';
+import { CgplacesComponent } from './components/cgplaces/cgplaces.component';
+import { CgsubscribedComponent } from './components/cgsubscribed/cgsubscribed.component';
+import { PgpracticesComponent } from './components/pgpractices/pgpractices.component';
+import { PgrequestsComponent } from './components/pgrequests/pgrequests.component';
+import { PgsubscribedComponent } from './components/pgsubscribed/pgsubscribed.component';
+import { EgpracticeersComponent } from './components/egpracticeers/egpracticeers.component';
+import { EgpracticesComponent } from './components/egpractices/egpractices.component';
+import { EgteachersComponent } from './components/egteachers/egteachers.component';
+import { EgreportsComponent } from './components/egreports/egreports.component';
+import { EgcompaniesComponent } from './components/egcompanies/egcompanies.component';
+//import {  } from './components/';
+
 
 const routes: Routes = [
+  /*{
+    path:'',
+    component:Component
+  },*/
+  {
+    path:'employee/practiceers',
+    component:EgpracticeersComponent
+  },
+  {
+    path:'employee/teachers',
+    component:EgteachersComponent
+  },
+  {
+    path:'employee/practices',
+    component:EgpracticesComponent
+  },
+  {
+    path:'employee/companies',
+    component:EgcompaniesComponent
+  },
+  {
+    path:'reports',
+    component:EgreportsComponent
+  },
+  {
+    path:'practiceer/subscribed',
+    component:PgsubscribedComponent
+  },
+  {
+    path:'practiceer/requests',
+    component:PgrequestsComponent
+  },
+  {
+    path:'practiceer/practices',
+    component:PgpracticesComponent
+  },
+  {
+    path:'company/subscribed',
+    component:CgsubscribedComponent
+  },
+  {
+    path:'company/places',
+    component:CgplacesComponent
+  },
+  {
+    path:'company/practices',
+    component:CgpracticesComponent
+  },
+  {
+    path:'company/practiceers',
+    component:CgpracticeersComponent
+  },
+  {
+    path:'teacher/rankings',
+    component:TgrankingsComponent
+  },
+  {
+    path:'teacher/practiceers',
+    component:TgpracticeersComponent
+  },
+  {
+    path:'teacher/places',
+    component:TgplaceComponent
+  },
+  {
+    path:'teacher/faults',
+    component:TgfaultsComponent
+  },
   {
     path:'company',
     component:CompanyComponent

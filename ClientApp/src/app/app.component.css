@@ -15,11 +15,9 @@
     }
 }
 
-@media (max-width:880px){
-    .info{
-        display:none;
-    }
-}
+/*@media (max-width:880px){
+
+}*/
 
 .lateral{
     position: fixed;
@@ -70,7 +68,6 @@
 
 /*NAV-BAR*/
 .back{
-
     display: flex;
     flex-direction: row;
     cursor: pointer;
@@ -166,6 +163,7 @@ p{
 .opt:hover > p{    
     color: green;
 }
+
 /*FIN NAV-BAR*/
 
 

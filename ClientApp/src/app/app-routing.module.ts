@@ -30,6 +30,14 @@ import { EgpracticesComponent } from './components/egpractices/egpractices.compo
 import { EgteachersComponent } from './components/egteachers/egteachers.component';
 import { EgreportsComponent } from './components/egreports/egreports.component';
 import { EgcompaniesComponent } from './components/egcompanies/egcompanies.component';
+import { PsdeleteComponent } from './components/psdelete/psdelete.component';
+import { PsmodComponent } from './components/psmod/psmod.component';
+import { PrrecordComponent } from './components/prrecord/prrecord.component';
+import { PrmodComponent } from './components/prmod/prmod.component';
+import { PrdeleteComponent } from './components/prdelete/prdelete.component';
+import { PpratingComponent } from './components/pprating/pprating.component';
+import { PpstatusComponent } from './components/ppstatus/ppstatus.component';
+
 //import {  } from './components/';
 
 
@@ -38,6 +46,34 @@ const routes: Routes = [
     path:'',
     component:Component
   },*/
+  {
+    path:'practiceer/practice/status',
+    component:PpstatusComponent
+  },
+  {
+    path:'practiceer/practice/ratings',
+    component:PpratingComponent
+  },
+  {
+    path:'practiceer/request/delete',
+    component:PrdeleteComponent
+  },
+  {
+    path:'practiceer/request/modify',
+    component:PrmodComponent
+  },
+  {
+    path:'practiceer/request/record',
+    component:PrrecordComponent
+  },
+  {
+    path:'practiceer/subscribed/modify',
+    component:PsmodComponent
+  },
+  {
+    path:'practiceer/subscribed/delete',
+    component:PsdeleteComponent
+  },
   {
     path:'employee/practiceers',
     component:EgpracticeersComponent
@@ -63,11 +99,11 @@ const routes: Routes = [
     component:PgsubscribedComponent
   },
   {
-    path:'practiceer/requests',
+    path:'practiceer/request',
     component:PgrequestsComponent
   },
   {
-    path:'practiceer/practices',
+    path:'practiceer/practice',
     component:PgpracticesComponent
   },
   {

@@ -41,6 +41,13 @@ import { EgpracticeersComponent } from './components/egpracticeers/egpracticeers
 import { EgcompaniesComponent } from './components/egcompanies/egcompanies.component';
 import { EgreportsComponent } from './components/egreports/egreports.component';
 import { EgpracticesComponent } from './components/egpractices/egpractices.component';
+import { PpratingComponent } from './components/pprating/pprating.component';
+import { PpstatusComponent } from './components/ppstatus/ppstatus.component';
+import { PsmodComponent } from './components/psmod/psmod.component';
+import { PrmodComponent } from './components/prmod/prmod.component';
+import { PrrecordComponent } from './components/prrecord/prrecord.component';
+import { PrdeleteComponent } from './components/prdelete/prdelete.component';
+import { PsdeleteComponent } from './components/psdelete/psdelete.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +84,14 @@ import { EgpracticesComponent } from './components/egpractices/egpractices.compo
     EgpracticeersComponent,
     EgcompaniesComponent,
     EgreportsComponent,
-    EgpracticesComponent
+    EgpracticesComponent,
+    PpratingComponent,
+    PpstatusComponent,
+    PsmodComponent,
+    PrmodComponent,
+    PrrecordComponent,
+    PrdeleteComponent,
+    PsdeleteComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

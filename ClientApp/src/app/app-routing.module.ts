@@ -49,6 +49,13 @@ import { TrdeleteComponent } from './components/trdelete/trdelete.component';
 import { TfrecordComponent } from './components/tfrecord/tfrecord.component';
 import { TfmodifyComponent } from './components/tfmodify/tfmodify.component';
 import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
+import { EtrecordComponent } from './components/etrecord/etrecord.component';
+import { EtmodifyComponent } from './components/etmodify/etmodify.component';
+import { EtdeleteComponent } from './components/etdelete/etdelete.component';
+import { EtsearchComponent } from './components/etsearch/etsearch.component';
+import { EpsearchComponent } from './components/epsearch/epsearch.component';
+import { EpdeleteComponent } from './components/epdelete/epdelete.component';
+import { EprecordComponent } from './components/eprecord/eprecord.component';
 
 //import {  } from './components/';
 
@@ -58,6 +65,34 @@ const routes: Routes = [
     path:'',
     component:Component
   },*/
+  {
+    path:'employee/practice/delete',
+    component:EpdeleteComponent
+  },
+  {
+    path:'employee/practice/search',
+    component:EpsearchComponent
+  },
+  {
+    path:'employee/practice/record',
+    component:EprecordComponent
+  },
+  {
+    path:'employee/teacher/modify',
+    component:EtmodifyComponent
+  },
+  {
+    path:'employee/teacher/delete',
+    component:EtdeleteComponent
+  },
+  {
+    path:'employee/teacher/search',
+    component:EtsearchComponent
+  },
+  {
+    path:'employee/teacher/record',
+    component:EtrecordComponent
+  },
   {
     path:'teacher/fault/delete',
     component:TfdeleteComponent

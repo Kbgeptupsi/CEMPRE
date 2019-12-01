@@ -57,6 +57,16 @@
     background-color: rgba(245,245,245, 0.5);
 }
 
+.mark{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .down{
     height: fit-content;
     width: 100%;

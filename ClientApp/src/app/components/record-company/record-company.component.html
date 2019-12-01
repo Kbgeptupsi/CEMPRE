@@ -7,115 +7,119 @@
       </div>
     </div>
   
-    <H1>REGISTRAR EMPRESA</H1>
+    <div class="middle">
 
-    <div class="panel" *ngIf="pag==0">
-        <h5>SUBA LOGO AQUI</h5> 
-      
-        <div class="preview">
-          <div class="photo">
-            <img src="" alt="">
-          </div>
-        </div>
-  
-        <div class="files">
-          <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
-          <button id="upload" (click)="fileInput.click()">Up</button>
-          <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
-        </div>
-    </div>
+      <H1>REGISTRAR EMPRESA</H1>
 
-    <div class="panel" *ngIf="pag==1">
-      <h2>DATOS PERSONALES REPRESENTANTE LEGAL</h2> 
-      <div class="cols">
-
-        <div class="col1">
-
-          <div >
-            <label >Cedula ciudadania</label>
-            <input [(ngModel)]="Practicantes.id" type="text" placeholder="Digite cedula">
-          </div>
-
-          <div>           
-            <label>Primer apellido</label>
-            <input type="text" placeholder="Digite primer apellido">
-          </div>
-
-          <div>
-            <label>Segundo apellido</label>
-            <input type="text" placeholder="Digite segundo apellido">
-          </div>
-      
-          <div >
-            <label >Nombres</label>
-            <input Practicantes.names type="text"   placeholder="Digite nombres">
-          </div> 
-
-          <div >
-            <label >Estado civil</label>
-            <div class="list">
-              <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
-                <option selected value="Uno">Opción</option>
-                <option value="Dos">Opción</option>
-                <option value="Tres">Opción</option>
-              </select>
+      <div class="panel" *ngIf="pag==0">
+          <h5>SUBA LOGO AQUI</h5> 
+        
+          <div class="preview">
+            <div class="photo">
+              <img src="" alt="">
             </div>
-          </div>   
-
-
-        </div>
-
-        <div class="col2">
-
-          <div >
-            <label >Departamento</label>
-            <div class="list">
-              <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
-                <option selected value="Uno">Opción</option>
-                <option value="Dos">Opción</option>
-                <option value="Tres">Opción</option>
-              </select>
-            </div>
-          </div> 
-
-          <div >
-            <label >Ciudad</label>
-            <div class="list">
-              <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
-                <option selected value="Uno">Opción</option>
-                <option value="Dos">Opción</option>
-                <option value="Tres">Opción</option>
-              </select>
-            </div>
-          </div>
-
-          <div >
-            <label >Direccion</label>
-            <input type="text" placeholder="Digite Direcciona actual">
           </div>
     
-          <div >
-            <label >Telefono</label>
-            <input type="text" placeholder="Digite telefono">
-          </div> 
-
-          <div >
-            <label >Constancia de empresa</label>
-            <div class="files">
-              <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
-              <button id="upload" (click)="fileInput.click()">Up</button>
-              <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
-            </div>
+          <div class="files">
+            <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
+            <button id="upload" (click)="fileInput.click()">Up</button>
+            <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
           </div>
-
+      </div>
+  
+      <div class="panel" *ngIf="pag==1">
+        <h2>DATOS PERSONALES REPRESENTANTE LEGAL</h2> 
+        <div class="cols">
+  
+          <div class="col1">
+  
+            <div >
+              <label >Cedula ciudadania</label>
+              <input [(ngModel)]="Practicantes.id" type="text" placeholder="Digite cedula">
+            </div>
+  
+            <div>           
+              <label>Primer apellido</label>
+              <input type="text" placeholder="Digite primer apellido">
+            </div>
+  
+            <div>
+              <label>Segundo apellido</label>
+              <input type="text" placeholder="Digite segundo apellido">
+            </div>
+        
+            <div >
+              <label >Nombres</label>
+              <input Practicantes.names type="text"   placeholder="Digite nombres">
+            </div> 
+  
+            <div >
+              <label >Estado civil</label>
+              <div class="list">
+                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                  <option selected value="Uno">Opción</option>
+                  <option value="Dos">Opción</option>
+                  <option value="Tres">Opción</option>
+                </select>
+              </div>
+            </div>   
+  
+  
+          </div>
+  
+          <div class="col2">
+  
+            <div >
+              <label >Departamento</label>
+              <div class="list">
+                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                  <option selected value="Uno">Opción</option>
+                  <option value="Dos">Opción</option>
+                  <option value="Tres">Opción</option>
+                </select>
+              </div>
+            </div> 
+  
+            <div >
+              <label >Ciudad</label>
+              <div class="list">
+                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                  <option selected value="Uno">Opción</option>
+                  <option value="Dos">Opción</option>
+                  <option value="Tres">Opción</option>
+                </select>
+              </div>
+            </div>
+  
+            <div >
+              <label >Direccion</label>
+              <input type="text" placeholder="Digite Direcciona actual">
+            </div>
+      
+            <div >
+              <label >Telefono</label>
+              <input type="text" placeholder="Digite telefono">
+            </div> 
+  
+            <div >
+              <label >Constancia de empresa</label>
+              <div class="files">
+                <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
+                <button id="upload" (click)="fileInput.click()">Up</button>
+                <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
+              </div>
+            </div>
+  
+          </div>
+  
         </div>
-
+  
+        <div >
+          <button (click)="add()" >REGISTRAR</button>
+        </div>
+  
       </div>
-
-      <div >
-        <button (click)="add()" >REGISTRAR</button>
-      </div>
-
+      
     </div>
 
     <div class="right" (click)="sig()">

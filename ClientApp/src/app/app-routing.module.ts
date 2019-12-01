@@ -19,7 +19,6 @@ import { TgplaceComponent } from './components/tgplace/tgplace.component';
 import { TgpracticeersComponent } from './components/tgpracticeers/tgpracticeers.component';
 import { TgrankingsComponent } from './components/tgrankings/tgrankings.component';
 import { CgpracticeersComponent } from './components/cgpracticeers/cgpracticeers.component';
-import { CgpracticesComponent } from './components/cgpractices/cgpractices.component';
 import { CgplacesComponent } from './components/cgplaces/cgplaces.component';
 import { CgsubscribedComponent } from './components/cgsubscribed/cgsubscribed.component';
 import { PgpracticesComponent } from './components/pgpractices/pgpractices.component';
@@ -37,6 +36,13 @@ import { PrmodComponent } from './components/prmod/prmod.component';
 import { PrdeleteComponent } from './components/prdelete/prdelete.component';
 import { PpratingComponent } from './components/pprating/pprating.component';
 import { PpstatusComponent } from './components/ppstatus/ppstatus.component';
+import { CsstatusComponent } from './components/csstatus/csstatus.component';
+import { CsdeleteComponent } from './components/csdelete/csdelete.component';
+import { CrdeleteComponent } from './components/crdelete/crdelete.component';
+import { CrrecordComponent } from './components/crrecord/crrecord.component';
+import { CrstatusComponent } from './components/crstatus/crstatus.component';
+import { CpselectionComponent } from './components/cpselection/cpselection.component';
+import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
 
 //import {  } from './components/';
 
@@ -46,6 +52,34 @@ const routes: Routes = [
     path:'',
     component:Component
   },*/
+  {
+    path:'company/practiceer/search',
+    component:CpsearchComponent
+  },
+  {
+    path:'company/practiceer/selection',
+    component:CpselectionComponent
+  },
+  {
+    path:'company/request/status',
+    component:CrstatusComponent
+  },
+  {
+    path:'company/request/record',
+    component:CrrecordComponent
+  },
+  {
+    path:'company/request/delete',
+    component:CrdeleteComponent
+  },
+  {
+    path:'company/subscribed/delete',
+    component:CsdeleteComponent
+  },
+  {
+    path:'company/subscribed/status',
+    component:CsstatusComponent
+  },
   {
     path:'practiceer/practice/status',
     component:PpstatusComponent
@@ -111,31 +145,27 @@ const routes: Routes = [
     component:CgsubscribedComponent
   },
   {
-    path:'company/places',
+    path:'company/place',
     component:CgplacesComponent
   },
   {
-    path:'company/practices',
-    component:CgpracticesComponent
-  },
-  {
-    path:'company/practiceers',
+    path:'company/practiceer',
     component:CgpracticeersComponent
   },
   {
-    path:'teacher/rankings',
+    path:'teacher/ranking',
     component:TgrankingsComponent
   },
   {
-    path:'teacher/practiceers',
+    path:'teacher/practiceer',
     component:TgpracticeersComponent
   },
   {
-    path:'teacher/places',
+    path:'teacher/place',
     component:TgplaceComponent
   },
   {
-    path:'teacher/faults',
+    path:'teacher/fault',
     component:TgfaultsComponent
   },
   {

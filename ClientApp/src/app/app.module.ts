@@ -32,7 +32,6 @@ import { TgplaceComponent } from './components/tgplace/tgplace.component';
 import { CgpracticeersComponent } from './components/cgpracticeers/cgpracticeers.component';
 import { CgsubscribedComponent } from './components/cgsubscribed/cgsubscribed.component';
 import { CgplacesComponent } from './components/cgplaces/cgplaces.component';
-import { CgpracticesComponent } from './components/cgpractices/cgpractices.component';
 import { PgpracticesComponent } from './components/pgpractices/pgpractices.component';
 import { PgrequestsComponent } from './components/pgrequests/pgrequests.component';
 import { PgsubscribedComponent } from './components/pgsubscribed/pgsubscribed.component';
@@ -48,6 +47,14 @@ import { PrmodComponent } from './components/prmod/prmod.component';
 import { PrrecordComponent } from './components/prrecord/prrecord.component';
 import { PrdeleteComponent } from './components/prdelete/prdelete.component';
 import { PsdeleteComponent } from './components/psdelete/psdelete.component';
+import { CsstatusComponent } from './components/csstatus/csstatus.component';
+import { CsdeleteComponent } from './components/csdelete/csdelete.component';
+import { CrdeleteComponent } from './components/crdelete/crdelete.component';
+import { CrrecordComponent } from './components/crrecord/crrecord.component';
+import { CrstatusComponent } from './components/crstatus/crstatus.component';
+import { CpselectionComponent } from './components/cpselection/cpselection.component';
+import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
+
 
 @NgModule({
   declarations: [
@@ -76,7 +83,6 @@ import { PsdeleteComponent } from './components/psdelete/psdelete.component';
     CgpracticeersComponent,
     CgsubscribedComponent,
     CgplacesComponent,
-    CgpracticesComponent,
     PgpracticesComponent,
     PgrequestsComponent,
     PgsubscribedComponent,
@@ -91,7 +97,14 @@ import { PsdeleteComponent } from './components/psdelete/psdelete.component';
     PrmodComponent,
     PrrecordComponent,
     PrdeleteComponent,
-    PsdeleteComponent
+    PsdeleteComponent,
+    CsstatusComponent,
+    CsdeleteComponent,
+    CrdeleteComponent,
+    CrrecordComponent,
+    CrstatusComponent,
+    CpselectionComponent,
+    CpsearchComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

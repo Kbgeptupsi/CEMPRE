@@ -60,6 +60,13 @@ import { TrdeleteComponent } from './components/trdelete/trdelete.component';
 import { TfrecordComponent } from './components/tfrecord/tfrecord.component';
 import { TfmodifyComponent } from './components/tfmodify/tfmodify.component';
 import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
+import { EtrecordComponent } from './components/etrecord/etrecord.component';
+import { EtmodifyComponent } from './components/etmodify/etmodify.component';
+import { EtsearchComponent } from './components/etsearch/etsearch.component';
+import { EtdeleteComponent } from './components/etdelete/etdelete.component';
+import { EprecordComponent } from './components/eprecord/eprecord.component';
+import { EpdeleteComponent } from './components/epdelete/epdelete.component';
+import { EpsearchComponent } from './components/epsearch/epsearch.component';
 
 
 @NgModule({
@@ -117,6 +124,13 @@ import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
     TfrecordComponent,
     TfmodifyComponent,
     TfdeleteComponent,
+    EtrecordComponent,
+    EtmodifyComponent,
+    EtsearchComponent,
+    EtdeleteComponent,
+    EprecordComponent,
+    EpdeleteComponent,
+    EpsearchComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

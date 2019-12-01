@@ -1,1 +1,145 @@
-<p>etrecord works!</p>
+<div class="back">
+    <div class="center">
+
+        <div class="left" (click)="ant()">
+            <div class="cont">
+                <img src="assets/source/arrowizq.png" alt="">
+            </div>
+        </div>
+
+        <div class="middle">
+      
+            <H1>REGISTRAR DOCENTE</H1>
+        
+            <div class="panel" *ngIf="pag==0">
+        
+                <h5>FOTOGRAFIA FONDO BLANCO</h5> 
+                
+                <div class="preview">
+                    <div class="photo">
+                        <img src="" alt="">
+                    </div>
+                </div>
+        
+                <div class="files">
+                    <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
+                    <button id="upload" (click)="fileInput.click()">Up</button>
+                    <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
+                </div>
+        
+            </div>
+            
+            <div class="panel" *ngIf="pag==1">
+        
+                <h5>DATOS PERSONALES</h5>
+        
+                <div class="cols">
+        
+                    <div class="col1">       
+                        <div>        
+                            <label>Primer apellido</label>
+                            <input [(ngModel)]="Practicantes.firstsurname" type="text"   placeholder="Digite primer apellido">
+                        </div>
+                
+                        <div >
+                            <label>Nombres</label>
+                            <input [(ngModel)]="Practicantes.names" type="text"   placeholder="Digite nombres">
+                        </div>
+                
+                        <div >
+                            <label>Departamento</label>
+                            <div class="list">
+                                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                                <option selected value="Uno">Opción</option>
+                                <option value="Dos">Opción</option>
+                                <option value="Tres">Opción</option>
+                                </select>
+                            </div>
+                        </div>
+                
+                        <div >
+                            <label>Dirección</label>
+                            <input [(ngModel)]="Practicantes.adress" type="text"   placeholder="Digite Direcciona actual">
+                        </div>
+                
+                        <div>
+                            <label >Estado civil</label>
+                            <div class="list">
+                                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                                <option selected value="Uno">Opción</option>
+                                <option value="Dos">Opción</option>
+                                <option value="Tres">Opción</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label >Cargo</label>
+                            <div class="list">
+                                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                                <option selected value="Uno">Opción</option>
+                                <option value="Dos">Opción</option>
+                                <option value="Tres">Opción</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                    </div>
+                
+                    <div class="col2">    
+                        <div >
+                            <label>Segundo apellido</label>
+                            <input [(ngModel)]="Practicantes.lastsurname" type="text"   placeholder="Digite segundo apellido">
+                        </div>
+                
+                        <div >
+                            <label>Cedula</label>
+                            <input [(ngModel)]="Practicantes.id" type="text"   placeholder="Digite cedula">
+                        </div>
+            
+                        <div >
+                            <label>Ciudad</label>
+                            <div class="list">
+                                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                                    <option selected value="Uno">Opción</option>
+                                    <option value="Dos">Opción</option>
+                                    <option value="Tres">Opción</option>
+                                </select>
+                            </div>
+                        </div>
+                
+                        <div >
+                            <label>Telefono</label>
+                            <input [(ngModel)]="Practicantes.telephone" type="text"   placeholder="Digite telefono">
+                        </div>
+                
+                        <div >
+                            <label>Email</label>
+                            <input [(ngModel)]="Practicantes.text" type="text"   placeholder="Digite correo elecetronico">
+                        </div>
+
+                        <div >
+                            <label >Constancia de EPS</label>
+                            <div class="files">
+                                <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
+                                <button id="upload" (click)="fileInput.click()">Up</button>
+                                <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
+                            </div>
+                        </div>
+
+                    </div>        
+        
+                </div>
+
+            </div>
+        
+        </div>
+
+        <div class="right" (click)="sig()">
+            <div class="cont">
+                <img src="assets/source/arrowder.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>

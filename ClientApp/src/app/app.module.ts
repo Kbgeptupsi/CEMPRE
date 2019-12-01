@@ -43,30 +43,22 @@ import { EgpracticesComponent } from './components/egpractices/egpractices.compo
 import { PpratingComponent } from './components/pprating/pprating.component';
 import { PpstatusComponent } from './components/ppstatus/ppstatus.component';
 import { PsmodComponent } from './components/psmod/psmod.component';
-import { PrmodComponent } from './components/prmod/prmod.component';
 import { PrrecordComponent } from './components/prrecord/prrecord.component';
-import { PrdeleteComponent } from './components/prdelete/prdelete.component';
+import { PrsearchComponent } from './components/prsearch/prsearch.component';
 import { PsdeleteComponent } from './components/psdelete/psdelete.component';
 import { CsstatusComponent } from './components/csstatus/csstatus.component';
 import { CsdeleteComponent } from './components/csdelete/csdelete.component';
-import { CrdeleteComponent } from './components/crdelete/crdelete.component';
-import { CrrecordComponent } from './components/crrecord/crrecord.component';
-import { CrstatusComponent } from './components/crstatus/crstatus.component';
 import { CpselectionComponent } from './components/cpselection/cpselection.component';
 import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
 import { TrrecordComponent } from './components/trrecord/trrecord.component';
-import { TrmodifyComponent } from './components/trmodify/trmodify.component';
-import { TrdeleteComponent } from './components/trdelete/trdelete.component';
+import { TrsearchComponent } from './components/trsearch/trsearch.component';
 import { TfrecordComponent } from './components/tfrecord/tfrecord.component';
-import { TfmodifyComponent } from './components/tfmodify/tfmodify.component';
-import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
 import { EtrecordComponent } from './components/etrecord/etrecord.component';
-import { EtmodifyComponent } from './components/etmodify/etmodify.component';
 import { EtsearchComponent } from './components/etsearch/etsearch.component';
-import { EtdeleteComponent } from './components/etdelete/etdelete.component';
 import { EprecordComponent } from './components/eprecord/eprecord.component';
 import { EpdeleteComponent } from './components/epdelete/epdelete.component';
 import { EpsearchComponent } from './components/epsearch/epsearch.component';
+import { TfsearchComponent } from './components/tfsearch/tfsearch.component';
 
 
 @NgModule({
@@ -107,27 +99,19 @@ import { EpsearchComponent } from './components/epsearch/epsearch.component';
     PpratingComponent,
     PpstatusComponent,
     PsmodComponent,
-    PrmodComponent,
     PrrecordComponent,
-    PrdeleteComponent,
+    PrsearchComponent,
     PsdeleteComponent,
     CsstatusComponent,
     CsdeleteComponent,
-    CrdeleteComponent,
-    CrrecordComponent,
-    CrstatusComponent,
     CpselectionComponent,
     CpsearchComponent,
     TrrecordComponent,
-    TrmodifyComponent,
-    TrdeleteComponent,
+    TrsearchComponent,
     TfrecordComponent,
-    TfmodifyComponent,
-    TfdeleteComponent,
+    TfsearchComponent,
     EtrecordComponent,
-    EtmodifyComponent,
     EtsearchComponent,
-    EtdeleteComponent,
     EprecordComponent,
     EpdeleteComponent,
     EpsearchComponent,

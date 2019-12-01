@@ -54,6 +54,12 @@ import { CrrecordComponent } from './components/crrecord/crrecord.component';
 import { CrstatusComponent } from './components/crstatus/crstatus.component';
 import { CpselectionComponent } from './components/cpselection/cpselection.component';
 import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
+import { TrrecordComponent } from './components/trrecord/trrecord.component';
+import { TrmodifyComponent } from './components/trmodify/trmodify.component';
+import { TrdeleteComponent } from './components/trdelete/trdelete.component';
+import { TfrecordComponent } from './components/tfrecord/tfrecord.component';
+import { TfmodifyComponent } from './components/tfmodify/tfmodify.component';
+import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
 
 
 @NgModule({
@@ -105,6 +111,12 @@ import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
     CrstatusComponent,
     CpselectionComponent,
     CpsearchComponent,
+    TrrecordComponent,
+    TrmodifyComponent,
+    TrdeleteComponent,
+    TfrecordComponent,
+    TfmodifyComponent,
+    TfdeleteComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

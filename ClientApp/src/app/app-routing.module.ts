@@ -43,6 +43,12 @@ import { CrrecordComponent } from './components/crrecord/crrecord.component';
 import { CrstatusComponent } from './components/crstatus/crstatus.component';
 import { CpselectionComponent } from './components/cpselection/cpselection.component';
 import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
+import { TrrecordComponent } from './components/trrecord/trrecord.component';
+import { TrmodifyComponent } from './components/trmodify/trmodify.component';
+import { TrdeleteComponent } from './components/trdelete/trdelete.component';
+import { TfrecordComponent } from './components/tfrecord/tfrecord.component';
+import { TfmodifyComponent } from './components/tfmodify/tfmodify.component';
+import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
 
 //import {  } from './components/';
 
@@ -52,6 +58,30 @@ const routes: Routes = [
     path:'',
     component:Component
   },*/
+  {
+    path:'teacher/fault/delete',
+    component:TfdeleteComponent
+  },
+  {
+    path:'teacher/fault/modify',
+    component:TfmodifyComponent
+  },
+  {
+    path:'teacher/fault/record',
+    component:TfrecordComponent
+  },
+  {
+    path:'teacher/rating/delete',
+    component:TrdeleteComponent
+  },
+  {
+    path:'teacher/rating/modify',
+    component:TrmodifyComponent
+  },
+  {
+    path:'teacher/rating/record',
+    component:TrrecordComponent
+  },
   {
     path:'company/practiceer/search',
     component:CpsearchComponent

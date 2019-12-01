@@ -1,10 +1,48 @@
 <div class="back">
-    <div class="center">
 
-        <p>egpracticeers work!</p>
+    <div class="center">
+    
+        <div class="limit">
+            <div class="rows filter">
+                <div class="subRows">
+                    <div class="filterIcon">
+                        <img src="../../../assets/sources/Filtro22x22.png" alt="">
+                    </div>
+                    <p><b>Filtro</b></p>
+                    <div class="list">
+                        <select [(ngModel)]="filter" [ngModelOptions]="{standalone:true}">
+                            <option selected value="N">Ninguno</option>
+                            <option value="C">Codigo</option>
+                            <option value="F">Fecha</option>
+                        </select>
+                    </div>  
+                </div>
+                
+                <div class="subRows" *ngIf="filter == 'C'">
+                    <p><b>Cedula</b></p>
+                    <input type="number" [(ngModel)]="code" [ngModelOptions]="{standalone:true}">   
+                </div>
+                <div class="subRows"  *ngIf="filter == 'F'">
+                    <p><b>Inicio</b></p>
+                    <input type="date" [(ngModel)]="start" [ngModelOptions]="{standalone:true}">
+                </div>
+                <div class="subRows" *ngIf="filter == 'F'">
+                    <p><b>Final</b></p>
+                    <input type="date" [(ngModel)]="end" [ngModelOptions]="{standalone:true}">
+                </div>
+                <div class="subRows">
+                    <button (click)="getFilterNotices()">Consultar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rows find">
+            <p>{{encontrados()}} Resultados</p>
+        </div>
 
     </div>
 </div>
+    
             
         
     

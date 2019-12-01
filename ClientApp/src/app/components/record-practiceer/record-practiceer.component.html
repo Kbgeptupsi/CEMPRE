@@ -159,10 +159,14 @@
               </div>
             </div>
           
-            <div >
+            <div>
               <label>Titulo</label>
-              <div >
-                <input type="text"   placeholder="Digite su titulo">
+              <div class="list">
+                <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
+                  <option selected value="Uno">Opción</option>
+                  <option value="Dos">Opción</option>
+                  <option value="Tres">Opción</option>
+                </select>
               </div>
             </div>
           

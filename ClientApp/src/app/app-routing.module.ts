@@ -32,26 +32,18 @@ import { EgcompaniesComponent } from './components/egcompanies/egcompanies.compo
 import { PsdeleteComponent } from './components/psdelete/psdelete.component';
 import { PsmodComponent } from './components/psmod/psmod.component';
 import { PrrecordComponent } from './components/prrecord/prrecord.component';
-import { PrmodComponent } from './components/prmod/prmod.component';
-import { PrdeleteComponent } from './components/prdelete/prdelete.component';
+import { PrsearchComponent } from './components/prsearch/prsearch.component';
 import { PpratingComponent } from './components/pprating/pprating.component';
 import { PpstatusComponent } from './components/ppstatus/ppstatus.component';
 import { CsstatusComponent } from './components/csstatus/csstatus.component';
 import { CsdeleteComponent } from './components/csdelete/csdelete.component';
-import { CrdeleteComponent } from './components/crdelete/crdelete.component';
-import { CrrecordComponent } from './components/crrecord/crrecord.component';
-import { CrstatusComponent } from './components/crstatus/crstatus.component';
 import { CpselectionComponent } from './components/cpselection/cpselection.component';
 import { CpsearchComponent } from './components/cpsearch/cpsearch.component';
 import { TrrecordComponent } from './components/trrecord/trrecord.component';
-import { TrmodifyComponent } from './components/trmodify/trmodify.component';
-import { TrdeleteComponent } from './components/trdelete/trdelete.component';
+import { TrsearchComponent } from './components/trsearch/trsearch.component';
 import { TfrecordComponent } from './components/tfrecord/tfrecord.component';
-import { TfmodifyComponent } from './components/tfmodify/tfmodify.component';
-import { TfdeleteComponent } from './components/tfdelete/tfdelete.component';
+import { TfsearchComponent } from './components/tfsearch/tfsearch.component';
 import { EtrecordComponent } from './components/etrecord/etrecord.component';
-import { EtmodifyComponent } from './components/etmodify/etmodify.component';
-import { EtdeleteComponent } from './components/etdelete/etdelete.component';
 import { EtsearchComponent } from './components/etsearch/etsearch.component';
 import { EpsearchComponent } from './components/epsearch/epsearch.component';
 import { EpdeleteComponent } from './components/epdelete/epdelete.component';
@@ -78,14 +70,6 @@ const routes: Routes = [
     component:EprecordComponent
   },
   {
-    path:'employee/teacher/modify',
-    component:EtmodifyComponent
-  },
-  {
-    path:'employee/teacher/delete',
-    component:EtdeleteComponent
-  },
-  {
     path:'employee/teacher/search',
     component:EtsearchComponent
   },
@@ -94,24 +78,16 @@ const routes: Routes = [
     component:EtrecordComponent
   },
   {
-    path:'teacher/fault/delete',
-    component:TfdeleteComponent
-  },
-  {
-    path:'teacher/fault/modify',
-    component:TfmodifyComponent
+    path:'teacher/fault/search',
+    component:TfsearchComponent
   },
   {
     path:'teacher/fault/record',
     component:TfrecordComponent
   },
   {
-    path:'teacher/rating/delete',
-    component:TrdeleteComponent
-  },
-  {
-    path:'teacher/rating/modify',
-    component:TrmodifyComponent
+    path:'teacher/rating/search',
+    component:TrsearchComponent
   },
   {
     path:'teacher/rating/record',
@@ -124,18 +100,6 @@ const routes: Routes = [
   {
     path:'company/practiceer/selection',
     component:CpselectionComponent
-  },
-  {
-    path:'company/request/status',
-    component:CrstatusComponent
-  },
-  {
-    path:'company/request/record',
-    component:CrrecordComponent
-  },
-  {
-    path:'company/request/delete',
-    component:CrdeleteComponent
   },
   {
     path:'company/subscribed/delete',
@@ -154,12 +118,8 @@ const routes: Routes = [
     component:PpratingComponent
   },
   {
-    path:'practiceer/request/delete',
-    component:PrdeleteComponent
-  },
-  {
-    path:'practiceer/request/modify',
-    component:PrmodComponent
+    path:'practiceer/request/search',
+    component:PrsearchComponent
   },
   {
     path:'practiceer/request/record',
@@ -174,23 +134,23 @@ const routes: Routes = [
     component:PsdeleteComponent
   },
   {
-    path:'employee/practiceers',
+    path:'employee/practiceer',
     component:EgpracticeersComponent
   },
   {
-    path:'employee/teachers',
+    path:'employee/teacher',
     component:EgteachersComponent
   },
   {
-    path:'employee/practices',
+    path:'employee/practice',
     component:EgpracticesComponent
   },
   {
-    path:'employee/companies',
+    path:'employee/company',
     component:EgcompaniesComponent
   },
   {
-    path:'reports',
+    path:'report',
     component:EgreportsComponent
   },
   {
@@ -218,7 +178,7 @@ const routes: Routes = [
     component:CgpracticeersComponent
   },
   {
-    path:'teacher/ranking',
+    path:'teacher/rating',
     component:TgrankingsComponent
   },
   {

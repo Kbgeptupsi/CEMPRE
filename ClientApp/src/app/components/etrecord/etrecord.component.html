@@ -34,15 +34,20 @@
                 <h5>DATOS PERSONALES</h5>
         
                 <div class="cols">
-        
-                    <div class="col1">       
+
+                    <div class="col1">                        
+                        <div >
+                            <label>Cedula</label>
+                            <input [(ngModel)]="Practicantes.id" type="text"   placeholder="Digite cedula">
+                        </div>
+
                         <div>        
                             <label>Primer apellido</label>
                             <input [(ngModel)]="Practicantes.firstsurname" type="text"   placeholder="Digite primer apellido">
                         </div>
                 
                         <div >
-                            <label>Nombres</label>
+                            <label>Primer nombre</label>
                             <input [(ngModel)]="Practicantes.names" type="text"   placeholder="Digite nombres">
                         </div>
                 
@@ -72,9 +77,12 @@
                                 </select>
                             </div>
                         </div>
-
+            
+                    </div>
+                
+                    <div class="col2">                        
                         <div>
-                            <label >Cargo</label>
+                            <label >Programa</label>
                             <div class="list">
                                 <select [(ngModel)]="Practicantes.Ciudad" [ngModelOptions]="{standalone:true}">
                                 <option selected value="Uno">Opción</option>
@@ -83,19 +91,18 @@
                                 </select>
                             </div>
                         </div>
-            
-                    </div>
-                
-                    <div class="col2">    
+
                         <div >
                             <label>Segundo apellido</label>
                             <input [(ngModel)]="Practicantes.lastsurname" type="text"   placeholder="Digite segundo apellido">
                         </div>
-                
+
                         <div >
-                            <label>Cedula</label>
-                            <input [(ngModel)]="Practicantes.id" type="text"   placeholder="Digite cedula">
+                            <label>Segundo nombre</label>
+                            <input [(ngModel)]="Practicantes.lastsurname" type="text"   placeholder="Digite segundo apellido">
                         </div>
+                
+
             
                         <div >
                             <label>Ciudad</label>
@@ -118,18 +125,19 @@
                             <input [(ngModel)]="Practicantes.text" type="text"   placeholder="Digite correo elecetronico">
                         </div>
 
-                        <div >
-                            <label >Constancia de EPS</label>
-                            <div class="files">
-                                <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
-                                <button id="upload" (click)="fileInput.click()">Up</button>
-                                <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
-                            </div>
-                        </div>
-
-                    </div>        
-        
+                    </div>
+  
                 </div>
+
+                <div >
+                    <label >Constancia de EPS</label>
+                    <div class="files">
+                        <input type="file" (change)="onFileSelected($event)" #fileInput id="file">
+                        <button id="upload" (click)="fileInput.click()">Up</button>
+                        <input id="uploadName" type="text" value="{{name}}" placeholder="Ningun archivo" disabled>
+                    </div>
+                </div>
+        
 
             </div>
         

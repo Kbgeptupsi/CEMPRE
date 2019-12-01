@@ -12,7 +12,6 @@ import { RecordPracticeerComponent } from './components/record-practiceer/record
 import { InfoCempreComponent } from './components/info-cempre/info-cempre.component';
 /*import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';*/
 /*import { InMemoryDataService } from '../app/services/in-memory-data.service';*/
-import { RecordTeacherComponent } from './components/record-teacher/record-teacher.component';
 import { RecordCompanyComponent } from './components/record-company/record-company.component';
 import { EmployeeComponent } from '../app/components/employee/employee.component';
 import { LoginComponent } from '../app/components/login/login.component';
@@ -68,7 +67,6 @@ import { TfsearchComponent } from './components/tfsearch/tfsearch.component';
     HelpPracticeerComponent,   
     RecordPracticeerComponent,   
     InfoCempreComponent,   
-    RecordTeacherComponent,   
     RecordCompanyComponent,
     LoginComponent, 
     EmployeeComponent,

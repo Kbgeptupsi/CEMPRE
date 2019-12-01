@@ -10,7 +10,7 @@ import { CompanyService } from '../../services/company.service';
 export class RecordCompanyComponent implements OnInit {
 
   private pag:number = 0;
-  private max:number = 1;
+  private max:number = 2;
 
   constructor(private companyS:CompanyService) { }
 

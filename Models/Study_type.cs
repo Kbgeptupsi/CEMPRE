@@ -5,13 +5,15 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace CEMPRE.Models
 {
-    public class Sex
+    public class Study_type
     {
         [Key]
-        public int SkSex { get; set; }
+        public int SkType { get; set; }
 
         public string Name { get; set; }
+
     }
 }

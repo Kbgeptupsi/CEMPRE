@@ -7,11 +7,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CEMPRE.Models
 {
-    public class Sex
+    public class City
     {
         [Key]
-        public int SkSex { get; set; }
+        public int SkCity { get; set; }
+
+        public Department FkDpto { get; set; }
+
+        [ForeignKey("FkDpto")]
+        public int FkDepartment { get; set; }
 
         public string Name { get; set; }
+    
     }
 }

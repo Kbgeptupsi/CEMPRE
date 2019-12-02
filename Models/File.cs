@@ -9,12 +9,26 @@ namespace CEMPRE.Models
 {
     public class File
     {
-        public int Id { get; set; }
-        public string Uploader { get; set; }
+        [JsonProperty("skfile")]
+        [Key]
+        public int SkFile { get; set; }
+        
+        public User FkUp { get; set; }
+
+        [ForeignKey("FkUp")]
+        [JsonProperty("skuploader")]
+        public string FkUploader { get; set; }
+        
+        [JsonProperty("location")]
         public string Location { get; set; }
-        public string File_type { get; set; }
+        
+        [JsonProperty("type")]
+        public string Type { get; set; }
+        
+        [JsonProperty("size")]
         public string Size { get; set; }
-        public string Uploader_type { get; set; }
+        
+        [JsonProperty("upload_date")]
         public DateTime Upload_date { get; set; }
     }
 }

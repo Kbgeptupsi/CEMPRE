@@ -5,11 +5,17 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace CEMPRE.Models
 {
-    public class Password
+    public class Work
     {
-        public string Id { get; set; }
-        public string Pass { get; set; }
+        [Key]
+        public int SkWork { get; set; }
+
+        public string Title { get; set; }
+
+        public string Desc { get; set; }
+
     }
 }

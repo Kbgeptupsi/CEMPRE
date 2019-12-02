@@ -9,9 +9,23 @@ namespace CEMPRE.Models
 {
     public class Connect
     {
-        public string Id { get; set; }
-        public string ConnectType { get; set; }
-        public string IpConnected { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int SkConnect { get; set; }
+
+        public User FkUs { get; set; }
+
+        [JsonProperty("fkuser")]
+        [ForeignKey("FkUs")]
+        public string FkUser { get; set; }
+
+        [JsonProperty("ip")]
+        public string Ip { get; set; }
+
+        [JsonProperty("dateconnection")]
         public DateTime DateConnection { get; set; }
+    
+        [JsonProperty("mac")]
+        public string mac { get; set; }
     }
 }

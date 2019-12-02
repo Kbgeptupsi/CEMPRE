@@ -9,15 +9,36 @@ namespace CEMPRE.Models
 {
     public class Request
     {
-        public int Id { get; set; }
+        [JsonProperty("skrequest")]
+        [Key]
+        public int SkRequest { get; set; }
+
+        [JsonProperty("desc")]
         public string Desc { get; set; }
+
+        [JsonProperty("answer")]
         public string Answer { get; set; }
-        public string Status { get; set; }
-        public string File { get; set; }
-        public string Sender { get; set; }
-        public string Addressee { get; set; }
-        public string Addressee_type { get; set; }
-        public string Sender_type { get; set; }
+
+        public Request_status FkRS { get; set; }
+        
+        [JsonProperty("fkstatus")]
+        [ForeignKey("FkRS")]
+        public string FkStatus { get; set; }
+
+        public File FkFil { get; set; }
+
+        [JsonProperty("fkfile")]
+        [ForeignKey("FkFil")]
+        public string FkFile { get; set; }
+
+        public User FkUser { get; set; }
+
+        [JsonProperty("fksender")]
+        [ForeignKey("FkUser")]
+        public string FkSender { get; set; }
+
+        [JsonProperty("request_date")]
         public DateTime Request_date { get; set; }
+    
     }
 }

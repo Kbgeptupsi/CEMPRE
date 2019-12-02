@@ -9,8 +9,20 @@ namespace CEMPRE.Models
 {
     public class Affinity
     {
-        public string Id { get; set; }
-        public Company Com { get; set; }
-        public Program Prog { get; set; }
+        [JsonProperty("skaffinity")]
+        [Key]
+        public int SkAffinity { get; set; }
+        
+        public Company FkComp { get; set; }
+        
+        [JsonProperty("fkcompany")]
+        [ForeignKey("FkComp")]
+        public string FkCompany { get; set; }
+        
+        public Program FkProg { get; set; }
+        
+        [JsonProperty("fkprogram")]
+        [ForeignKey("FkProg")]
+        public int FkProgram { get; set; }
     }
 }
